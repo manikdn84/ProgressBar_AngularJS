@@ -9,51 +9,51 @@
 		<link rel="stylesheet" type="text/css" href="css/progessbarstyle.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-		<SCRIPT
+		<script
 		src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"
-		type="text/javascript"></SCRIPT>	
+		type="text/javascript"></script>	
 		
-		<SCRIPT src="js/progressBarScript.js" type="text/javascript" ></SCRIPT>
+		<script src="js/progressBarScript.js" type="text/javascript" ></script>
 	</head>
 	<body>
-		</br>
-		</br>
+		<br/>
+		<br/>
 
 		<div class="container" ng-app="progressBar" ng-controller="progressBarCtrl">
 
 			<div class="progress">
 				<div  class="progress-bar progress-bar-back" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:100%">
-					<SPAN class="progress-label">{{progressVal1}}%</SPAN>
-					<DIV id="progressBar1" class="progress-bar-fill" style="width: {{progressVal1}}%; color: black">
+					<span class="progress-label">{{progressVal1}}%</span>
+					<div id="progressBar1" class="progress-bar-fill" style="width: {{progressVal1}}%; color: black">
 
-					</DIV>
+					</div>
 				</div>
 			</div>
-			<INPUT id="myRange1" tabindex="0" type="range" min="0" max="100"
+			<input id="myRange1" tabindex="0" type="range" min="0" max="100"
 			on-input="seek" ng-disabled="{{readonly}}" value="{{progress}}"
 			step="1" >
 
 			<div class="progress">
 				<div  class="progress-bar progress-bar-back" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:100%">
-					<SPAN class="progress-label">{{progressVal2}}%</SPAN>
-					<DIV id="progressBar2" class="progress-bar-fill" style="width: {{progressVal2}}%; color: black">
+					<span class="progress-label">{{progressVal2}}%</span>
+					<div id="progressBar2" class="progress-bar-fill" style="width: {{progressVal2}}%; color: black">
 
-					</DIV>
+					</div>
 				</div>
 			</div>
-			<INPUT id="myRange2" tabindex="0" type="range" min="0" max="100"
+			<input id="myRange2" tabindex="0" type="range" min="0" max="100"
 			on-input="seek" ng-disabled="{{readonly}}" value="{{progress}}"
 			step="1" >
 
 			<div class="progress">
 				<div  class="progress-bar progress-bar-back" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:100%">
-					<SPAN class="progress-label">{{progressVal3}}%</SPAN>
-					<DIV id="progressBar3" class="progress-bar-fill" style="width: {{progressVal3}}%; color: black">
+					<span class="progress-label">{{progressVal3}}%</span>
+					<div id="progressBar3" class="progress-bar-fill" style="width: {{progressVal3}}%; color: black">
 
-					</DIV>
+					</div>
 				</div>
 			</div>
-			<INPUT id="myRange3" tabindex="0" type="range" min="0" max="100"
+			<input id="myRange3" tabindex="0" type="range" min="0" max="100"
 			on-input="seek" ng-disabled="{{readonly}}" value="{{progress}}"
 			step="1" >
 
@@ -67,26 +67,26 @@
 					</select></td>
 					<td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
 					<td>
-					<BUTTON ng-click="stepDown(25)">
+					<button ng-click="stepDown(25)">
 						-25%
-					</BUTTON></td>
+					</button></td>
 					<td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
 
 					<td>
-					<BUTTON ng-click="stepDown(10)">
+					<button ng-click="stepDown(10)">
 						-10%
-					</BUTTON></td>
+					</button></td>
 					<td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
 					<td>
-					<BUTTON ng-click="stepUp(10)">
+					<button ng-click="stepUp(10)">
 						+10%
-					</BUTTON></td>
+					</button></td>
 					<td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
 
 					<td>
-					<BUTTON ng-click="stepUp(25)">
+					<button ng-click="stepUp(25)">
 						+25%
-					</BUTTON></td>
+					</button></td>
 					
 
 				</tr>
@@ -99,10 +99,10 @@
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-		<SCRIPT
+		<script
 		src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"
-		type="text/javascript"></SCRIPT>	
+		type="text/javascript"></script>	
 		
-		<SCRIPT src="js/progressBarScript.js" type="text/javascript" ></SCRIPT>		
-	</BODY>
-</HTML>
+		<script src="js/progressBarScript.js" type="text/javascript" ></script>		
+	</body>
+</html>

@@ -28,6 +28,5 @@ input[type=range] {
 	width: 100%;
 	height: 100%;
 	cursor: pointer;
-	/* essentially making range slider invisible */
 	opacity: 0;
 }
