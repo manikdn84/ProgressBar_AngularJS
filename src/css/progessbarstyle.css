@@ -1,0 +1,33 @@
+@CHARSET "UTF-8";
+.progress-bar-fill {
+	height: inherit;
+	background-color: #ADD8E6;
+	color: black;
+}
+.progress-bar-back {
+	height: inherit;
+	background-color: #EEE8AA;
+	color: black;
+	text-align: center;
+}
+.progress-bar-danger {
+	height: inherit;
+	background-color: red;
+	color: black;
+}
+.progress-label {
+	position: absolute;
+	right: 0;
+	left: 0;
+	color: black;
+}
+input[type=range] {
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	cursor: pointer;
+	/* essentially making range slider invisible */
+	opacity: 0;
+}

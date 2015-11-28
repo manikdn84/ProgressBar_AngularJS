@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Progress Bar</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+			
+		<link rel="stylesheet" type="text/css" href="css/progessbarstyle.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+		<SCRIPT
+		src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"
+		type="text/javascript"></SCRIPT>	
+		
+		<SCRIPT src="js/progressBarScript.js" type="text/javascript" ></SCRIPT>
+	</head>
+	<body>
+		</br>
+		</br>
+
+		<div class="container" ng-app="progressBar" ng-controller="progressBarCtrl">
+
+			<div class="progress">
+				<div  class="progress-bar progress-bar-back" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:100%">
+					<SPAN class="progress-label">{{progressVal1}}%</SPAN>
+					<DIV id="progressBar1" class="progress-bar-fill" style="width: {{progressVal1}}%; color: black">
+
+					</DIV>
+				</div>
+			</div>
+			<INPUT id="myRange1" tabindex="0" type="range" min="0" max="100"
+			on-input="seek" ng-disabled="{{readonly}}" value="{{progress}}"
+			step="1" >
+
+			<div class="progress">
+				<div  class="progress-bar progress-bar-back" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:100%">
+					<SPAN class="progress-label">{{progressVal2}}%</SPAN>
+					<DIV id="progressBar2" class="progress-bar-fill" style="width: {{progressVal2}}%; color: black">
+
+					</DIV>
+				</div>
+			</div>
+			<INPUT id="myRange2" tabindex="0" type="range" min="0" max="100"
+			on-input="seek" ng-disabled="{{readonly}}" value="{{progress}}"
+			step="1" >
+
+			<div class="progress">
+				<div  class="progress-bar progress-bar-back" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:100%">
+					<SPAN class="progress-label">{{progressVal3}}%</SPAN>
+					<DIV id="progressBar3" class="progress-bar-fill" style="width: {{progressVal3}}%; color: black">
+
+					</DIV>
+				</div>
+			</div>
+			<INPUT id="myRange3" tabindex="0" type="range" min="0" max="100"
+			on-input="seek" ng-disabled="{{readonly}}" value="{{progress}}"
+			step="1" >
+
+			<table>
+				<tr>
+					<td>
+					<select id="selectedBar" ng-change="chooseProgressBar()" ng-model="item" >
+						<option value="bar1">Progress Bar1</option>
+						<option value="bar2">Progress Bar2</option>
+						<option value="bar3">Progress Bar3</option>
+					</select></td>
+					<td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+					<td>
+					<BUTTON ng-click="stepDown(25)">
+						-25%
+					</BUTTON></td>
+					<td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+					<td>
+					<BUTTON ng-click="stepDown(10)">
+						-10%
+					</BUTTON></td>
+					<td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+					<td>
+					<BUTTON ng-click="stepUp(10)">
+						+10%
+					</BUTTON></td>
+					<td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+					<td>
+					<BUTTON ng-click="stepUp(25)">
+						+25%
+					</BUTTON></td>
+					
+
+				</tr>
+
+			</table>
+
+			&nbsp;&nbsp;&nbsp;&nbsp;
+
+		</div>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+		<SCRIPT
+		src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"
+		type="text/javascript"></SCRIPT>	
+		
+		<SCRIPT src="js/progressBarScript.js" type="text/javascript" ></SCRIPT>		
+	</BODY>
+</HTML>
